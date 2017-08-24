@@ -1,0 +1,24 @@
+{
+  "name": "@kapoun/dbal",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jiri Kapoun",
+    "email": "kapoun4@gmail.com"
+  },
+  "main": "dist/dbal.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel src/ --out-dir dist/ --copy-files",
+    "build:clean": "rimraf dist/ ; npm run build"
+  },
+  "dependencies": {
+    "mysql2": "^1.3.5"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  }
+}
