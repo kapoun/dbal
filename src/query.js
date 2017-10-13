@@ -1,4 +1,5 @@
-import db from './db';
+import * as mysql from 'mysql2';
+import db         from './db';
 
 export default class Query {
   
